@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,108 @@
     <title>OnHome</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo" id="onHome">OnHome</div>
-                <ul class="navbar">
-                    <li class=""><a href="index.html">Página inicial</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Sobre nós</a></li>
-                    <li><a href="">Orçamento</a></li>
-                    <li><a href="">Suporte</a></li>
-                </ul>
+            <div class="logo" id="onHome"><img src="assets/logotipo-branco-onhome.png" alt=""></div>
+            <ul class="navbar">
+                <li class=""><a href="index.html">Página inicial</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Orçamento</a></li>
+                <li><a href="Suporte.html">Suporte</a></li>
+            </ul>
         </div>
     </header>
+
     <img src="./assets/stock-image.png" class="img--home">
+
     <section class="about">
-        <div class="our-services">
-            <div class="text--div">
-                <h2 class="title">Nossos serviços</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati impedit 
-                    nobis ad pariatur odio modi tempora dicta minus, sit quae delectus labore corrupti, 
-                    id dolore quod beatae suscipit laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Maiores similique aut ipsum quisquam sunt assumenda ut harum fugit veritatis fuga provident pariatur nisi 
-                    porro voluptate iure eius sapiente illum, optio cumque ex nemo. Culpa autem nemo rerum eius adipisci nihil, 
-                    reprehenderit voluptate delectus obcaecati quia porro veniam in, hic enim?</p>
+        <div class="container">
+            <div class="our-services">
+                <div class="text--div">
+                    <h2 class="title">Nossos serviços</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati impedit
+                        nobis ad pariatur odio modi tempora dicta minus, sit quae delectus labore corrupti,
+                        id dolore quod beatae suscipit laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores similique aut ipsum quisquam sunt assumenda ut harum fugit veritatis fuga provident
+                        pariatur nisi
+                        porro voluptate iure eius sapiente illum, optio cumque ex nemo. Culpa autem nemo rerum eius
+                        adipisci nihil,
+                        reprehenderit voluptate delectus obcaecati quia porro veniam in, hic enim?</p>
+                </div>
+                <img src="./assets/polygons.png" class="polygons--img">
             </div>
-            <img src="./assets/polygons.png" class="polygons--img">
         </div>
-        <div class="about-us">
-            <img src="./assets/coworkers.png" class="coworker--img">
-            <div class="text--div">
-                <h2>Quem somos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati impedit 
-                    nobis ad pariatur odio modi tempora dicta minus, sit quae delectus labore corrupti, 
-                    id dolore quod beatae suscipit laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim 
-                    fuga iure obcaecati at perspiciatis veniam similique harum quibusdam, laboriosam exercitationem commodi odio 
-                    nostrum et soluta corrupti, eaque deleniti alias cumque?</p>
+
+        <div class="container">
+            <div class="about-us">
+                <img src="./assets/coworkers.png" class="coworker--img">
+                <div class="text--div">
+                    <h2>Quem somos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati impedit
+                        nobis ad pariatur odio modi tempora dicta minus, sit quae delectus labore corrupti,
+                        id dolore quod beatae suscipit laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Enim
+                        fuga iure obcaecati at perspiciatis veniam similique harum quibusdam, laboriosam exercitationem
+                        commodi odio
+                        nostrum et soluta corrupti, eaque deleniti alias cumque?</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="orcamento">
-        <div class="orcamento--content">
+        <div class="container">
+            <div class="orcamento--content">
             <h1>Orçamento</h1>
-            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto harum quae eius, accusantium dolores quasi aut in vitae pariatur? 
-                Odio rerum numquam deleniti quam eaque, alias incidunt ipsam odit facere!</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto harum quae eius, accusantium dolores
+                quasi aut in vitae pariatur?
+                Odio rerum numquam deleniti quam eaque, alias incidunt ipsam odit facere!</p>
+                <div><button class="btn">Simular</button></div>
+            </div>
         </div>
     </section>
+
+    <section class="formularios">
+        <div class="container">
+            <div class="form--cadastro">
+                <h1>Junte-se a nós<br>Faça seu cadastro</h1>
+                <form action="">
+                    Nome:<br>
+                    <input type="text" name=""><br>
+                    E-mail:<br>
+                    <input type="text" name=""><br>
+                    Nome da empresa:<br>
+                    <input type="text" name=""><br>
+                    CNPJ:<br>
+                    <input type="text" name=""><br>
+                    Contato:<br>
+                    <input type="text" name=""><br>
+                </form>
+                <div>
+                    <button class="btn">Cadastrar-se</button>
+                </div>
+            </div>
+            <div class="form--login">
+                <h1>Já é cliente?<br>Faça seu login</h1>
+                <form action="">
+                    Usuário:<br>
+                    <input type="text" name="user"><br>
+                    Senha:<br>
+                    <input type="password" name="pass">
+                </form>
+                    <p>Esqueceu a senha? Recuperar</p>
+                    <input type="checkbox"> Mantenha-me conectado
+                    <div>
+                        <button class="btn">Entrar</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+
+    </section>
 </body>
+
 </html>
