@@ -41,7 +41,7 @@
 
 .header .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -124,6 +124,10 @@
     margin-top: 30px;
 }
 
+.orcamento--content p{
+    width: 60%;
+}
+
 .plans {
     margin-top: 50px;
     display: flex;
@@ -139,30 +143,59 @@
     width: 130px;
     font-size: 18px;
     height: 35px;
-    margin: 30px;
+    margin-top: 2%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4c2673;
+    transform: scaleX(105%);
+    transition: all ease 0.5s;
 }
 
 
  /*  RODAPÉ  */
 .footer {
     background-color: #4c2673;
-    height: 100px;
-    bottom: 0;
-    margin-top: 50px;
+    margin-top: 20px;
+    align-items: center;
     display: flex;
+    height: 80px;
+}
+.container--footer{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .footer--image img{
-    height: 10vh;
+    display: flex;
+    height: 5vh;
+}
+
+.footer--content{
+    display: flex;
+    margin-left: 5%;
 }
 
 /*  FIM DO RODAPÉ  */
 
 
 /*  FORMULARIOS  */
+
+.container{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .formularios {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .form--login {
@@ -179,12 +212,30 @@
     padding: 20px;
 }
 
-input {
+.input--form {
     background-color: #ECECEC;
     border-radius: 30px;
     border: none;
     padding: 8px;
     margin: 4px;
+    width: 50%;
+}
+
+.div--keepConected{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div--keepConected, p{
+    margin-left: 1%;
+}
+
+
+label {
+    margin-left: 2%;
+    display: flex;
+    margin-top: 2%;
 }
 
 /* FIM DOS FORMULÁRIOS */

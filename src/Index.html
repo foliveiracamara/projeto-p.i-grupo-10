@@ -76,34 +76,49 @@
         <div class="container">
             <div class="formularios">
                 <div class="form--cadastro">
+                    
                     <h1>Junte-se a nós<br>Faça seu cadastro</h1>
                     <form action="">
-                        Nome:<br>
-                        <input type="text" name=""><br>
-                        E-mail:<br>
-                        <input type="text" name=""><br>
-                        Nome da empresa:<br>
-                        <input type="text" name=""><br>
-                        CNPJ:<br>
-                        <input type="text" name=""><br>
-                        Contato:<br>
-                        <input type="text" name=""><br>
+                        <br>
+                        <label name="nome">Nome da empresa:</label>
+                        <input type="text" class="input--form"><br>
+                        
+                        <label name="email">E-mail:</label>
+                        <input type="text" class="input--form"><br>
+
+                        <label name="nome-da-empresa">CNPJ: </label>
+                        <input type="text" class="input--form"><br>
+                        
+                        <label>Telefone:</label>
+                        <input type="text" class="input--form"><br>
+
+                        <label>Nome responsável:</label>
+                        <input type="text" class="input--form"><br>
+                        <br>
+                        <button class="btn">Cadastrar-se</button>
                     </form>
                     <div>
-                        <button class="btn">Cadastrar-se</button>
                     </div>
                 </div>
                 <div class="form--login">
+                    
                     <h1>Já é cliente?<br>Faça seu login</h1>
                     <form action="">
-                        Usuário:<br>
-                        <input type="text" name="user"><br>
-                        Senha:<br>
-                        <input type="password" name="pass">
+                        <br>
+                        <label>Usuário:</label>
+                        <input type="text" class="input--form"><br>
+                        
+                        <label>Senha:</label>
+                        <input type="password" name="pass" class="input--form">
                     </form>
-                    <p>Esqueceu a senha? Recuperar</p>
-                    <input type="checkbox"> Mantenha-me conectado
+                    <br>
+                    <p>Esqueceu a senha? Recuperar</p><br>
+                    <div class="div--keepConected">
+                    <input type="checkbox" class=""> 
+                    <p>Mantenha-me conectado</p>
+                    </div>
                     <div>
+                        <br>
                         <button class="btn">Entrar</button>
                     </div>
                 </div>
@@ -113,12 +128,12 @@
 
     
     <div class="footer">
-        <div class="container">
+        <div class="container--footer">
             <div class="footer--image">
                 <img src="assets/logo-onhome-2.png" alt="Logotipo: OnHome">
             </div>
             <div class="footer--content">
-
+                <h5>All rights reserved</h5>
             </div>
         </div>
     </div>
