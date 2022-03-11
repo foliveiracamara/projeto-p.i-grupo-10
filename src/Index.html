@@ -8,6 +8,7 @@
     <title>OnHome</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="assets/onhome-icon-branco.ico" type="image/x-icon">
+    <script src="js/formatter.js" type="application/javascript"></script>
 </head>
 
 <body>
@@ -152,27 +153,25 @@
                 <div class="form--cadastro">
                     
                     <h1>Junte-se a nós<br>Faça seu cadastro</h1>
-                    <form action="">
+                    <form action="/api/cadastrar" method="post">
                         <br>
                         <label name="nome">Nome da empresa:</label>
                         <input type="text" class="input--form"><br>
                         
                         <label name="email">E-mail:</label>
-                        <input type="text" class="input--form"><br>
+                        <input type="email" class="input--form"><br>
 
                         <label name="nome-da-empresa">CNPJ: </label>
-                        <input type="text" class="input--form"><br>
+                        <input type="text" class="input--form" oninput="formatarCNPJ(this)"><br>
                         
                         <label>Telefone:</label>
-                        <input type="text" class="input--form"><br>
+                        <input type="text" class="input--form" oninput="formatarTelefone(this)"><br>
 
                         <label>Nome responsável:</label>
                         <input type="text" class="input--form"><br>
                         <br>
                         <button class="btn">Cadastrar-se</button>
                     </form>
-                    <div>
-                    </div>
                 </div>
                 <div class="form--login">
                     
