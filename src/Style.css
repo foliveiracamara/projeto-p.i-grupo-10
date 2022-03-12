@@ -12,50 +12,46 @@
     height: 20px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: sans-serif;
 }
 
-/*  HEADER  */
-.header{
-    height: 10vh;
-    background-color:#4c2673;
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
+.header {
+    background-color:#4c2673;
+}
+.header .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.logo {
+    height: 50%;
+}
 .logo img {
-    height: 9vh;
+    height: 100%;
 }
 .active{
     font-weight: bolder;
     font-size: 20px;
 }
 
-/* 
-.container{
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
-.header .container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navbar{
-    display: flex;
-    list-style: none;
-    width: 60%;
-    justify-content: space-between;
-}
 .navbar li{
     color: white(1, 81, 252);
     height: 100%;
@@ -78,12 +74,6 @@
 .img--home{
     width: 100%;
     height: 80vh;
-}
-
-.about {
-    padding-left: 6%;
-    padding-top: 3%; 
-    padding-right: 6%;
 }
 
 .our-services{
@@ -114,12 +104,11 @@
 
 .orcamento{
     width: 100%;
-    height: 80vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
- .container.container--cards{
+ .container .container--cards{
      display: flex;
      flex-direction: column;
  }
@@ -159,25 +148,17 @@
 .footer {
     background-color: #4c2673;
     margin-top: 20px;
-    align-items: center;
-    display: flex;
+}
+.footer .container {
     height: 80px;
-}
-.container--footer{
     display: flex;
     align-items: center;
-    width: 80%;
-    margin: auto;
 }
 
-.footer--image img{
+.footer .content {
+    flex: 1;
     display: flex;
-    height: 5vh;
-}
-
-.footer--content{
-    display: flex;
-    margin-left: 5%;
+    justify-content: center;
 }
 
 /*  FIM DO RODAPÉ  */
@@ -185,42 +166,19 @@
 
 /*  FORMULARIOS  */
 
-.container{
+.form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
 }
-
-.formularios {
+form {
     display: flex;
-    /* flex-direction: row; */
-    /* width: 80%; */
-    width: 80rem;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
+    flex-direction: column;
 }
-
-.form--login {
+.form-login, .form-cadastro {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* width: 50%; */
-    /* padding: 20px; */
-    width: 300px;
-    padding: 5rem;
-}
-
-.form--cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    /* width: 50%; */
-    /* padding: 20px; */
-    width: 20rem;
+    padding: 0 16px;
 }
 
 .input--form {
@@ -229,20 +187,7 @@
     border: none;
     padding: 8px;
     margin: 4px;
-    width: 100%;
 }
-
-.div--keepConected{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 15rem;
-}
-
-.div--keepConected, p{
-    margin-left: 1%;
-}
-
 
 label {
     margin-left: 2%;
