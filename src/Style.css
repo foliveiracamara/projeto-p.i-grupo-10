@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html, body {
     font-family: sans-serif;
@@ -280,3 +281,29 @@ label {
 /*  FIM DO RODAPÉ  */
 
 
+/* ANIMAÇÃO */
+[data-transition] {
+    opacity: 0;
+    transition: all ease-in .9s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+[data-transition="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-transition="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-transition="diagonal"] {
+    transform: rotateY(180deg);
+}
+
+[data-transition].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* FIM DA ANIMAÇÃO */
