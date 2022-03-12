@@ -52,11 +52,10 @@
 }
 
 
-.navbar li{
-    color: white(1, 81, 252);
+.navbar li {
     height: 100%;
 }
-.navbar li a{
+.navbar li a {
     color: white;
     text-decoration: none;
     padding: 20px;
@@ -132,11 +131,6 @@
     margin-left: 1%;
     cursor: pointer;
 }
-
-.btn.btn--orcamento{
-    margin-top: 25%;
-}
-
 .btn:hover {
     background-color: #4c2673;
     transform: scaleX(105%);
