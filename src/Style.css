@@ -201,6 +201,7 @@ main .main__right{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
  .container .container--cards{
      display: flex;
@@ -369,13 +370,32 @@ select {
     transition: all ease 0.5s;
 }
 
-#formulario--login {
+#formulario_login {
     display: none;
 }
 
-.form .container h1{
+.titulo {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
+
+.titulo button{
+    margin-bottom: 10px;
+}
+
+.titulo span:hover {
+    cursor: pointer;
+}
+
+.titulo span {
+    color: #5b00b6;
+    font-weight:lighter;
+}
+
+
 
 /* FIM DOS FORMULÁRIOS */
 

@@ -102,7 +102,9 @@
                     <div class="card-text">
                         <span class="date"> Mensal</span>
                         <h2>Opção 1</h2>
-                        <p>Plano ideal para demandas especificas, processamento, memória e empenho de ponta. Onde você dispõe de maior flexibilidade e agilidade conforme demanda, assim aumentando a produtividade e reduzindo custos! </p>
+                        <p>Plano ideal para demandas especificas, processamento, memória e empenho de ponta. Onde você
+                            dispõe de maior flexibilidade e agilidade conforme demanda, assim aumentando a produtividade
+                            e reduzindo custos! </p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -126,7 +128,9 @@
                     <div class="card-text">
                         <span class="date">Semestral</span>
                         <h2>Opção 2</h2>
-                        <p>Plano ideal para trabalhos/projetos mais extensos, com tecnologia de ponta para a demanda mais extensa, com atendimento personalizado e o mínimo de burocracia possível, assim facilitando a experiencia do usuário.</p>
+                        <p>Plano ideal para trabalhos/projetos mais extensos, com tecnologia de ponta para a demanda
+                            mais extensa, com atendimento personalizado e o mínimo de burocracia possível, assim
+                            facilitando a experiencia do usuário.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -149,7 +153,9 @@
                     <div class="card-text">
                         <span class="date">Anual</span>
                         <h2>Opção 3</h2>
-                        <p>Plano ideal para trabalhos/projetos a longo prazo, com tecnologia de ponta, suporte 7/7 semanais, upgrade periodicamente dos equipamentos, mínimo de burocracia possível e troca caso necessidade do cliente.</p>
+                        <p>Plano ideal para trabalhos/projetos a longo prazo, com tecnologia de ponta, suporte 7/7
+                            semanais, upgrade periodicamente dos equipamentos, mínimo de burocracia possível e troca
+                            caso necessidade do cliente.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -172,74 +178,87 @@
 
     <span id="cadastro"></span>
 
-    <section class="form">
-        <div class="container">
+    <div id="formulario_cadastro">
+        <div class="titulo">
+
             <h1>Junte-se a nós<br>Faça seu cadastro</h1>
-            <div class="form-cadastro-login" id="formulario--cadastro">
-                <form action="/api/cadastrar" method="post">
-                    <label name="nomeFantasia">Nome da empresa:</label>
-                    <input type="text" class="input--form">
-                    <label name="emailEmpresa">E-mail:</label>
-                    <input type="email" class="input--form">
-                    <label name="cnpj">CNPJ: </label>
-                    <input type="text" class="input--form" oninput="formatarCNPJ(this)">
-                    <label name="telefoneEmpresa">Telefone:</label>
-                    <input type="text" class="input--form" oninput="formatarTelefone(this)">
-                    <label name="cep">CEP:</label>
-                    <input type="text" class="input--form">
-                    <label name="logradouro">Logradouro:</label>
-                    <input type="text" class="input--form">
-            </div>
-            <div class="form-cadastro-login" id="formulario--cadastro">
-                
-                <label name="numero">Número:</label>
-                <input type="text" class="input--form">
-                <label name="complemento">Complemento:</label>
-                <input type="text" class="input--form">
-                <label name="bairro">Bairro:</label>
-                <input type="text" class="input--form">
-                <label name="estado">Estado:</label>
-                <input type="text" class="input--form">
-                <label name="cidade">Cidade:</label>
-                <input type="text" class="input--form">
-                <label>Plano:</label>
-                <select name="plano" id="">
-                    <option value="">
-                        Escolha um dos planos....
-                    </option>
-                    <option value="">Opção 1</option>
-                    <option value="">Opção 2</option>
-                    <option value="">Opção 3</option>
-                </select>
-            </div>
-            <button class="btn">Cadastrar-se</button>
-            </form>
-    
-            
         </div>
-    </section>
-    
+        <section class="form">
+            <div class="container">
+                <div class="form-cadastro-login">
+                    <form action="/api/cadastrar" method="post">
+                        <label name="nomeFantasia">Nome da empresa:</label>
+                        <input type="text" class="input--form">
+                        <label name="emailEmpresa">E-mail:</label>
+                        <input type="email" class="input--form">
+                        <label name="cnpj">CNPJ: </label>
+                        <input type="text" class="input--form" oninput="formatarCNPJ(this)">
+                        <label name="telefoneEmpresa">Telefone:</label>
+                        <input type="text" class="input--form" oninput="formatarTelefone(this)">
+                        <label name="cep">CEP:</label>
+                        <input type="text" class="input--form">
+                        <label name="logradouro">Logradouro:</label>
+                        <input type="text" class="input--form">
+                </div>
+                <div class="form-cadastro-login">
+
+                    <label name="numero">Número:</label>
+                    <input type="text" class="input--form">
+                    <label name="complemento">Complemento:</label>
+                    <input type="text" class="input--form">
+                    <label name="bairro">Bairro:</label>
+                    <input type="text" class="input--form">
+                    <label name="estado">Estado:</label>
+                    <input type="text" class="input--form">
+                    <label name="cidade">Cidade:</label>
+                    <input type="text" class="input--form">
+                    <label>Plano:</label>
+                    <select name="plano" id="">
+                        <option value="">
+                            Escolha um dos planos....
+                        </option>
+                        <option value="">Opção 1</option>
+                        <option value="">Opção 2</option>
+                        <option value="">Opção 3</option>
+                    </select>
+
+                </div>
+                </form>
+            </div>
+        </section>
+        <div class="titulo">
+            <button class="btn">Cadastrar-se</button>
+            <h3>Já é cliente? Faça seu <span onclick="mostrar()">login</span></h3>
+        </div>
+    </div>
+
     <section class="form">
         <div class="container">
-            <h1>Já é cliente?<br>Faça seu login</h1>
-            <div class="form-cadastro-login" id="formulario--login">
+            <div class="form-cadastro-login" id="formulario_login">
+                <div class="titulo">
+                    <h1>Bem vindo(a) de volta!</h1>
+                </div>
                 <form action="/api/login">
                     <label>Usuário:</label>
                     <input type="text" class="input--form">
                     <label>Senha:</label>
                     <input type="password" name="pass" class="input--form">
+
+
                     <div>
-                        <a href="" style="color: #4c2673; text-decoration: none;">
-                            <span style="color: black;">Esqueceu a senha?</span> Recuperar
-                        </a>
+                        <label>
+                            <sup><a href="" style="color: #4c2673; text-decoration: none;">
+                                    <span style="color: black;">Esqueceu a senha?</span> Recuperar
+                                </a></sup></label>
                     </div>
                     <div class="options">
                         <label>
                             <input type="checkbox" class="space-right">
-                            <p>Mantenha-me conectado</p>
+                            <p><sup>Mantenha-me conectado</sup></p>
                         </label>
-                        <button class="btn">Entrar</button>
                     </div>
+                    <button class="btn">Entrar</button>
+
                 </form>
             </div>
         </div>
@@ -301,5 +320,11 @@
     </footer>
 </body>
 <script src="js/transition.js"></script>
+<script>
+    function mostrar() {
+        formulario_login.style.display = 'block'
+        formulario_cadastro.style.display = 'none'
+    }
+</script>
 
 </html>
