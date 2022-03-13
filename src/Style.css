@@ -266,27 +266,6 @@ label {
 
 /* FIM DOS FORMULÁRIOS */
 
-
-/*  RODAPÉ  */
-.footer {
-    background-color: #4c2673;
-    margin-top: 20px;
-}
-.footer .container {
-    height: 80px;
-    display: flex;
-    align-items: center;
-}
-
-.footer .content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-/*  FIM DO RODAPÉ  */
-
-
 /* ANIMAÇÃO */
 [data-transition] {
     opacity: 0;
@@ -313,6 +292,70 @@ label {
 }
 
 /* FIM DA ANIMAÇÃO */
+
+/* Footer */
+
+.footer {
+    background-image: url(assets/fundoFooter.png);
+    background-color: #4c2673;
+}
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+.footer .informs,
+.footer .contatos {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.informs h1 {
+    color: white;
+}
+
+.informs p {
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.informs .redes {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.informs .redes .caixa {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flex img{
+    width: 35px;
+}
+
+.flex p {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+
+.flex p a {
+    font-weight: bolder;
+    color: white;
+}
+
 @media only screen and (max-width: 500px) {
     .about-img {
         width: 100%;
@@ -338,5 +381,8 @@ label {
     }
     .form .form-cadastro-login {
         padding: 40px 0;
+    }
+    .footer .container {
+        flex-direction: column;
     }
 }
