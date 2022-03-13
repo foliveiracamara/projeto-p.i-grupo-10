@@ -12,47 +12,85 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo"><img src="assets/logo-onhome-2.png" alt=""></div>
-            <ul class="navbar">
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#planos">Planos</a></li>
-                <li><a href="#cadastro">Cadastro</a></li>
-                <li><a href="#cadastro">Login</a></li>
-            </ul>
-        </div>
-    </header>
 
+    <div class="container--header">
+
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="Index.html"><img src="assets/logo-onhome-branco-2.png" alt="OnHome"></a>
+                </div>
+
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#cadastro">Cadastro</a></li>
+                        <li><a href="#cadastro">Login</a></li>
+                        <img class="close-icon" src="./assets/close-icon.png" alt="X">
+                    </ul>
+                </nav>
+                <button class="menu-icon"><img src="./assets/menu-icon.png" alt="Menu"></button>
+            </div>
+        </header>
+
+        <main>
+            <section class="main__left">
+                <h1><b>Locação</b> de máquinas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A repudiandae soluta accusantium ut tempora
+                    iure ullam blanditiis qui tenetur atque deleniti omnis eaque, dignissimos quis delectus eveniet
+                    quidem quas assumenda.</p>
+                <div class="main__left-btn">
+                    <button>
+                        <a href="#planos">Conheça nossos planos</a>
+                    </button>
+                    <button>
+                        Contate-nos
+                    </button>
+                </div>
+            </section>
+
+            <section class="main__right">
+                <img src="./assets/laptop.png" width="100%" alt="">
+            </section>
+
+        </main>
+
+    </div>
     <span id="servicos"></span>
-    <img src="./assets/stock-image.png" class="img--home">
     <section class="about">
         <div class="container">
             <div class="our-services">
                 <div class="text--div" data-transition="left">
                     <h2 class="title">Nossos serviços</h2>
-                    <p>Ao entrar em contato com nossa equipe e nos contar as suas necessidades, recomendaremos o melhor para o seu time e forneceremos equipamentos ideais para suas demandas, permitindo que seu time tenha a melhor experiência possível, assim alcançando seus objetivos de forma rápida e econômica.</p>
+                    <p>Ao entrar em contato com nossa equipe e nos contar as suas necessidades, recomendaremos o melhor
+                        para o seu time e forneceremos equipamentos ideais para suas demandas, permitindo que seu time
+                        tenha a melhor experiência possível, assim alcançando seus objetivos de forma rápida e
+                        econômica.</p>
                 </div>
-                <img src="./assets/polygons.png" class="about-img" data-transition="diagonal">
+                <img src="./assets/servicos.png" class="about-img" data-transition="diagonal">
             </div>
         </div>
 
 
-    <span id="sobre"></span>
+        <span id="sobre"></span>
         <div class="container">
             <div class="about-us">
-                <img src="./assets/coworkers.png" class="about-img" data-transition="diagonal">
+                <img src="./assets/quemsomos.png" class="about-img" data-transition="diagonal">
                 <div class="text--div" data-transition="right">
                     <h2>Quem somos</h2>
-                    <p>A OnHome é especialista no ramo, onde nosso objeto é oferecer o melhor e resolver os problemas das empresas, através de implementações e soluções de tecnologia de ponta, ajustando e adaptando para cada cliente e/ou negócio. Com uma variável opções de equipamento, possibilitando o atendimento de para diversas demanda e projeto.</p>
+                    <p>A OnHome é especialista no ramo, onde nosso objeto é oferecer o melhor e resolver os problemas
+                        das empresas, através de implementações e soluções de tecnologia de ponta, ajustando e adaptando
+                        para cada cliente e/ou negócio. Com uma variável opções de equipamento, possibilitando o
+                        atendimento de para diversas demanda e projeto.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <span id="planos"></span>
-  
+
     <div class="orcamento">
         <div class="container container--cards">
             <div class="plans">
@@ -64,14 +102,12 @@
                     <div class="card-text">
                         <span class="date"> Mensal</span>
                         <h2>Opção 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus labore ullam
-                            natus sint maxime, voluptates ab at alias nesciunt, neque quis explicabo, voluptatem
-                            recusandae aliquid voluptate velit magnam id.</p>
+                        <p>Plano ideal para demandas especificas, processamento, memória e empenho de ponta. Onde você dispõe de maior flexibilidade e agilidade conforme demanda, assim aumentando a produtividade e reduzindo custos! </p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
-                            <div class="value">R$1777<sup>,00</sup></div>
-                            <div class="type">à vista</div>
+                            <div class="value">R$<sup></sup></div>
+                            <div class="type">à combinar</div>
                         </div>
                         <div class="stat border">
                             <div class="value">15<sup>máquinas</sup></div>
@@ -90,14 +126,12 @@
                     <div class="card-text">
                         <span class="date">Semestral</span>
                         <h2>Opção 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus labore ullam
-                            natus sint maxime, voluptates ab at alias nesciunt, neque quis explicabo, voluptatem
-                            recusandae aliquid voluptate velit magnam id.</p>
+                        <p>Plano ideal para trabalhos/projetos mais extensos, com tecnologia de ponta para a demanda mais extensa, com atendimento personalizado e o mínimo de burocracia possível, assim facilitando a experiencia do usuário.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
-                            <div class="value">R$1777<sup>,00</sup></div>
-                            <div class="type">à vista</div>
+                            <div class="value">R$<sup></sup></div>
+                            <div class="type">à combinar</div>
                         </div>
                         <div class="stat border">
                             <div class="value">15<sup>máquinas</sup></div>
@@ -115,14 +149,12 @@
                     <div class="card-text">
                         <span class="date">Anual</span>
                         <h2>Opção 3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus labore ullam
-                            natus sint maxime, voluptates ab at alias nesciunt, neque quis explicabo, voluptatem
-                            recusandae aliquid voluptate velit magnam id.</p>
+                        <p>Plano ideal para trabalhos/projetos a longo prazo, com tecnologia de ponta, suporte 7/7 semanais, upgrade periodicamente dos equipamentos, mínimo de burocracia possível e troca caso necessidade do cliente.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
-                            <div class="value">R$1777<sup>,00</sup></div>
-                            <div class="type">à vista</div>
+                            <div class="value">R$<sup></sup></div>
+                            <div class="type">à combinar</div>
                         </div>
                         <div class="stat border">
                             <div class="value">15<sup>máquinas</sup></div>
@@ -139,33 +171,58 @@
     </div>
 
     <span id="cadastro"></span>
+
     <section class="form">
         <div class="container">
-            <div class="form-cadastro-login">
-                <h1>Junte-se a nós<br>Faça seu cadastro</h1>
+            <h1>Junte-se a nós<br>Faça seu cadastro</h1>
+            <div class="form-cadastro-login" id="formulario--cadastro">
                 <form action="/api/cadastrar" method="post">
-                    <label name="nome">Nome da empresa:</label>
+                    <label name="nomeFantasia">Nome da empresa:</label>
                     <input type="text" class="input--form">
-                    <label name="email">E-mail:</label>
+                    <label name="emailEmpresa">E-mail:</label>
                     <input type="email" class="input--form">
-                    <label name="nome-da-empresa">CNPJ: </label>
+                    <label name="cnpj">CNPJ: </label>
                     <input type="text" class="input--form" oninput="formatarCNPJ(this)">
-                    <label>Telefone:</label>
+                    <label name="telefoneEmpresa">Telefone:</label>
                     <input type="text" class="input--form" oninput="formatarTelefone(this)">
-                    <label>Plano:</label>
-                    <select name="" id="">
-                        <option value="">
-                            Escolha um dos planos....
-                        </option>
-                        <option value="">Opção 1</option>
-                        <option value="">Opção 2</option>
-                        <option value="">Opção 3</option>
-                    </select>
-                    <button class="btn">Cadastrar-se</button>
-                </form>
+                    <label name="cep">CEP:</label>
+                    <input type="text" class="input--form">
+                    <label name="logradouro">Logradouro:</label>
+                    <input type="text" class="input--form">
             </div>
-            <div class="form-cadastro-login">
-                <h1>Já é cliente?<br>Faça seu login</h1>
+            <div class="form-cadastro-login" id="formulario--cadastro">
+                
+                <label name="numero">Número:</label>
+                <input type="text" class="input--form">
+                <label name="complemento">Complemento:</label>
+                <input type="text" class="input--form">
+                <label name="bairro">Bairro:</label>
+                <input type="text" class="input--form">
+                <label name="estado">Estado:</label>
+                <input type="text" class="input--form">
+                <label name="cidade">Cidade:</label>
+                <input type="text" class="input--form">
+                <label>Plano:</label>
+                <select name="plano" id="">
+                    <option value="">
+                        Escolha um dos planos....
+                    </option>
+                    <option value="">Opção 1</option>
+                    <option value="">Opção 2</option>
+                    <option value="">Opção 3</option>
+                </select>
+            </div>
+            <button class="btn">Cadastrar-se</button>
+            </form>
+    
+            
+        </div>
+    </section>
+    
+    <section class="form">
+        <div class="container">
+            <h1>Já é cliente?<br>Faça seu login</h1>
+            <div class="form-cadastro-login" id="formulario--login">
                 <form action="/api/login">
                     <label>Usuário:</label>
                     <input type="text" class="input--form">
@@ -185,8 +242,9 @@
                     </div>
                 </form>
             </div>
+        </div>
     </section>
-    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="informs">

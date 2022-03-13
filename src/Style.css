@@ -17,13 +17,139 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    outline: 0;
 }
+
 html, body {
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
 
-.container {
+.container--header{
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 3%;
+    background-color: #6200c4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header .menu-icon {
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    position: relative;
+}
+
+nav .navbar {
+    list-style: none;
+}
+
+nav .navbar .close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+
+nav.active .navbar {
+    transform: translateX(0);
+}
+
+nav .navbar li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+nav .navbar a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav .navbar a:hover{
+    color: rgb(231, 191,241) ;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+main .main__left {
+    color: white;
+    width: 50%;
+    padding: 20px;
+    
+}
+
+main .main__left h1{
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+main .main__left p{
+    font-size: 22px;
+    margin: 40px 0;
+}
+
+main .main__left-btn button{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 20px 35px rgb(0, 0, 0, 10%), 0 15px 12px rgb(0, 0, 0, 8%);
+}
+
+.main__left-btn a{
+    text-decoration: none;
+}
+
+main .main__left-btn button:nth-child(1){
+    background: rgb(192, 115, 255);
+    color: rgb(19, 6, 42);
+    transition: all 0.5s;
+}
+
+main .main__left-btn button:nth-child(1):hover{
+    background-color: rgb(161, 59, 255);
+}
+
+main .main__left-btn button:nth-child(2){
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+main .main__left-btn button:nth-child(2):hover{
+    color: rgb(161, 59, 255);
+    background-color: white;
+}
+
+main .main__right{
+    padding-right: 50px;  
+}
+
+ .container {
     max-width: 1140px;
     padding: 0 20px;
     margin: 0 auto;
@@ -34,37 +160,6 @@ html, body {
     height: 40px;
 }
 .logo img {
-    height: 100%;
-}
-
-.header {
-    background-color:#4c2673;
-}
-.header .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-.navbar li {
-    display: flex;
-    align-items: center;
-}
-.navbar li a {
-    display: block;
-    padding: 32px 16px;
-    text-decoration: none;
-    color: white;
-}
-.navbar li a:hover {
-    background-color: rgb(253, 253, 253);
-    color: black;
     height: 100%;
 }
 
@@ -175,7 +270,7 @@ html, body {
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rebeccapurple;
+    background-color: #6200c4;
 }
 .card-stats .stat {
     display: flex;
@@ -227,6 +322,7 @@ form {
     flex-direction: column;
     justify-content: center;
     padding: 0 16px;
+    max-height: 1400px;
 }
 
 .input--form {
@@ -243,9 +339,17 @@ label {
     align-items: center;
     margin-top: 2%;
 }
+
+select {
+    padding: 10px;
+    background-color: #ECECEC;
+    border-radius: 30px;
+}
+
 .space-right {
     margin-right: 8px;
 }
+
 .btn {
     background-color: #000;
     color: #fff;
@@ -258,10 +362,19 @@ label {
     margin-left: 1%;
     cursor: pointer;
 }
+
 .btn:hover {
-    background-color: #4c2673;
+    background-color: #5b00b6;
     transform: scaleX(105%);
     transition: all ease 0.5s;
+}
+
+#formulario--login {
+    display: none;
+}
+
+.form .container h1{
+    align-items: center;
 }
 
 /* FIM DOS FORMULÁRIOS */
@@ -293,7 +406,7 @@ label {
 
 /* FIM DA ANIMAÇÃO */
 
-/* Footer */
+/* FOOTER */
 
 .footer {
     background-image: url(assets/fundoFooter.png);
@@ -356,7 +469,51 @@ label {
     color: white;
 }
 
+/*  FIM DO FOOTER  */
+
 @media only screen and (max-width: 500px) {
+    nav .navbar .close-icon,
+    header .menu-icon{
+        display: block;
+    }
+
+    nav .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100);
+        transition: transform 0.5s;
+        background-color: rgb(116, 0, 215);
+    }
+
+    nav .navbar li{
+        font-size: 30px;     
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    main .main__left{
+        width: 100%;
+        text-align: center;
+        padding: 50px;
+    }
+
+    main .main__left h1 {
+        font-size: 3rem;
+    }
+
+    main .main__right {
+        width: 100%;
+        margin: 50px 10px;
+    }
     .about-img {
         width: 100%;
     }
