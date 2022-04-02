@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.div--mainBox{
+    height: 80vh;
+    width: 100%;
+    background-image: 
+            linear-gradient(to right,
+            rgb(0, 5, 82),  
+            rgb(41, 0, 88), 
+            rgb(56, 0, 78));
+}
+
+.sla{
+    height: 100px;
+    width: 100%;
+    
+}
