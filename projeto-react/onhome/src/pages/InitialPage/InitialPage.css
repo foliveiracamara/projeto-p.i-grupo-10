@@ -42,3 +42,39 @@
     margin: auto;
     width: 33%;
 }
+
+.solutions {
+    position: relative;
+    height: 30rem;
+    margin-top: 19rem;
+    background-color: #0F0B30;
+    display: flex;
+    align-items: center;
+}
+
+.rightArrow, .leftArrow {
+    position: absolute;
+    top: 8rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3c0c0;
+    opacity: 0;
+    height: 15rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rightArrow:hover, .leftArrow:hover {
+    opacity: 0.1;
+}
+
+.rightArrow {
+    left: 1360px;
+}
+
+.leftArrow {
+    left: 15px;
+}
