@@ -6,17 +6,39 @@
 }
 
 .div--mainBox{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-image: 
             linear-gradient(to right,
             rgb(0, 5, 82),  
             rgb(41, 0, 88), 
-            rgb(56, 0, 78));
+            rgb(77, 0, 107));
 }
 
-.sla{
-    height: 100px;
-    width: 100%;
-    
+.about--content{
+    margin-top: 10%;
+}
+
+.about--content{
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle{
+    font-size: 35px;
+    color: white;
+    font-weight: lighter;
+}
+
+.title{
+    font-size: 70px;
+    color: #7879F1;
+    font-weight: bolder;
+}
+
+.about--onhome{
+    color: white;
+    font-weight: lighter;
+    margin: auto;
+    width: 33%;
 }
