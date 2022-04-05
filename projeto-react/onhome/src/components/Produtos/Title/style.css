@@ -1,0 +1,23 @@
+.products .text {
+    flex: 1;
+    color: white;
+    font-size: 16px;
+}
+.products .text.main-title {
+    max-width: 450px;
+}
+
+.products .text .label {
+    font-size: 1.25em;
+}
+.products .text .title {
+    font-size: 2em;
+    background: linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    margin: 0 auto;
+}
+.products .text .subtitle {
+    font-size: 1em;
+}

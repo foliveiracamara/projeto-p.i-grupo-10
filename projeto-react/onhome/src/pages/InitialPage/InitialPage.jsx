@@ -1,9 +1,10 @@
+import Header from "../../components/Header/Header";
 import { useState } from "react";
 import Header from "../../components/Header";
 import Slider from "../../components/Slider";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
-import "./InitialPage.css";
 
+import Produtos from "../../components/Produtos";
 const InitialPage = () => {
     const [scrollX, setScrollX] = useState(0);
     const [cardSelected, setCardSelected] = useState(3);
@@ -36,7 +37,9 @@ const InitialPage = () => {
                     <span className='about--onhome'>Utilize de equipamentos da mais alta qualidade,
                         com preços justos e serviços de suporte 24/7 a sua disposição!
                     </span>
+                    {/* <Button >Seguir<ArrowRightAltIcon /></Button> */}
                 </section>
+                <Produtos />
                 <section className="solutions">
                     <div className="leftArrow" onClick={handleLeftArrow}>
                         <KeyboardArrowLeft style={{ fontSize: 50 }}/>
