@@ -1,10 +1,10 @@
-import Header from "../../components/Header/Header";
 import { useState } from "react";
 import Header from "../../components/Header";
 import Slider from "../../components/Slider";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
-
 import Produtos from "../../components/Produtos";
+import './InitialPage.css'
+
 const InitialPage = () => {
     const [scrollX, setScrollX] = useState(0);
     const [cardSelected, setCardSelected] = useState(3);

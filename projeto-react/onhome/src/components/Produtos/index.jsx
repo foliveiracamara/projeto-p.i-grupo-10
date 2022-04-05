@@ -1,5 +1,5 @@
-import More from "./More";
-import Title from "./Title";
+import More from "../More";
+import Title from "../GradientText";
 import TextWithImage from "./TextWithImage";
 
 import './style.css';
