@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+.feedback--mainContainer{
+    background-color: rgb(46, 18, 73);
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.feedback--container{
+    width: 80%;
+    height: 80%;
+    border: red solid 2px;
+    margin: auto;
+}

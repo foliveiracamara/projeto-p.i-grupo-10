@@ -1,6 +1,6 @@
 import './style.css';
 
-const Title = (props) => {
+const GradientText = (props) => {
     const className = props.className ?? "";
     const textAlign = props.align ?? "center";
     const marginHorizontal = textAlign==="center" ? "auto" : "0";
@@ -8,16 +8,16 @@ const Title = (props) => {
     return (
         <div className={`text ${className}`} style={{ textAlign: textAlign }}>
             <div className="label">
-                {props.label}
+                {props.label ?? ''}
             </div>
             <div className="title" style={{ margin: marginHorizontal }}>
-                {props.title}
+                {props.title ?? ''}
             </div>
             <div className="subtitle">
-                {props.subtitle}
+                {props.subtitle ?? ''}
             </div>
         </div>
     );
 };
 
-export default Title;
+export default GradientText;
