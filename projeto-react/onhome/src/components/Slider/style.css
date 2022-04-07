@@ -1,9 +1,0 @@
-.slider--container {
-    position: relative;   
-    display: flex;
-    align-items: center;
-    overflow-x: hidden;
-    padding: 2rem;
-    transition: all ease-in 0.2s;
-    background-color: #0F0B30;
-}

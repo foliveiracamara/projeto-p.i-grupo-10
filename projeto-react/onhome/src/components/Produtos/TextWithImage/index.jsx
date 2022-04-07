@@ -1,11 +1,17 @@
-import Title from "../../GradientText";
+import GradientText from "../../GradientText";
 
 import './style.css';
 
 const TextWithImage = (props) => {
     return (
         <div className="textWithImage" style={{ flexDirection: props.reverse }}>
-            <Title label={props.label} title={props.title} subtitle={props.subtitle} align="left"/>
+            <GradientText 
+                label={props.label} 
+                title={props.title} 
+                subtitle={props.subtitle} 
+                fontSizeTitle={props.fontSizeTitle} 
+                fontSizeLabel={props.fontSizeLabel}
+                align="left"/>
             <img src={props.image} alt={props.alt} />
         </div>
     );

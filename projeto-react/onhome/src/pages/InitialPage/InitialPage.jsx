@@ -1,14 +1,15 @@
 import { useState } from "react";
 import Header from "../../components/Header";
-import Slider from "../../components/Slider";
-import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import { Feedback, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import Produtos from "../../components/Produtos";
 import './InitialPage.css'
+import Border from "../../components/Border";
+import Feedbacks from "./Feedbacks/Index"
 
 const InitialPage = () => {
     const [scrollX, setScrollX] = useState(0);
     const [cardSelected, setCardSelected] = useState(3);
-
+    let feijuca = "batata"
     const handleLeftArrow = () => {
         let card = cardSelected + 1
         let x = scrollX + 500;
@@ -40,18 +41,13 @@ const InitialPage = () => {
                     {/* <Button >Seguir<ArrowRightAltIcon /></Button> */}
                 </section>
                 <Produtos />
-                <section className="solutions">
-                    <div className="leftArrow" onClick={handleLeftArrow}>
-                        <KeyboardArrowLeft style={{ fontSize: 50 }}/>
-                    </div>
-                    <div className="rightArrow" onClick={handleRightArrow}>
-                        <KeyboardArrowRight style={{ fontSize: 50 }}/>
-                    </div>
-                    <Slider scrollX={scrollX} cardSelected={cardSelected}/>
-                </section>
+                <section>
+                    <Feedbacks title="aaaaaa"/>
+                </section> 
             </div>
         </div>
     )
 }
+
 
 export default InitialPage;
