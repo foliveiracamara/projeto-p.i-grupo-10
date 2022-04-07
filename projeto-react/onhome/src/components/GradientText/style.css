@@ -21,3 +21,13 @@
 .text .subtitle {
     font-size: 1em;
 }
+.borderTextLeft {
+    border-style: solid;
+    border-color: hsl(0, 0%, 100%);
+    border-width: 2px;
+    padding: 0 10px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 1;
+    border-right: 0;
+}
