@@ -41,9 +41,9 @@ const InitialPage = () => {
                     {/* <Button >Seguir<ArrowRightAltIcon /></Button> */}
                 </section>
                 <Produtos />
-                {/* <section>
+                <section>
                     <Feedbacks title="aaaaaa"/>
-                </section> */}
+                </section> 
             </div>
         </div>
     )

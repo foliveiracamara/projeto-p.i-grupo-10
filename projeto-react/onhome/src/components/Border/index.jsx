@@ -1,7 +1,7 @@
 import { height } from "@mui/system"
 import "./style.css"
 
-const Border = ({text, width, children}) => {
+const Border = ({text, width, height, children}) => {
 
     return (
         <div>
