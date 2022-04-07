@@ -1,0 +1,40 @@
+.fine-line {
+    background-color: white;
+    width: 300px;
+    height: 2px;
+    border-radius: 10px;
+    display: flex;
+}
+.gradient-line {
+    background: linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%)) border-box;
+    width: 70px;
+    height: 10px;
+    border-radius: 30px;
+    position: absolute;
+
+}
+
+.container {
+    width: 36vw;
+    height: 8vh;
+    background-color: rgba(255, 98, 98, 0);
+    display: flex;
+    align-items: center;
+    left: 50%;
+    position: absolute;
+}
+
+.vermelho {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.steps {
+    color: white;
+    opacity: 40%;
+
+}
+.steps:active {
+    opacity: 1;
+}
