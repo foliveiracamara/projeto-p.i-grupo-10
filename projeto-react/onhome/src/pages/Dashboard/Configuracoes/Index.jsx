@@ -9,10 +9,11 @@ const Configuracoes = () => {
         <div className='background'>
             <div className='content'>
                 <div className='right--content'>
-                    <div className='title'><GradientText title={"Configurações"}/></div>
+                    <div className='title'><GradientText title={"Configurações"} fontSizeTitle={45}/></div>
                     <div className='cards'>
                         <div className='empresa-plano--div'>
-                            <Border height={210}>
+                            <Border height={230}>
+                                <div>
                                 <h1 className='cards-title'>Empresa</h1>
                                 <div className='cards-description'>
                                     <p className='paragraph-card'>Razao Social:</p>
@@ -21,8 +22,10 @@ const Configuracoes = () => {
                                     <p className='paragraph-card'>Email:</p>
                                     <p className='paragraph-card'>Telefone:</p>
                                 </div>
+                                </div>
                             </Border>
-                            <Border height={210}>
+                            <Border height={190}>
+                                <div className='div-plano'>
                                 <h1 className='cards-title'>Plano</h1>
                                 <div className='cards-description'>
                                     <p className='paragraph-card'>Opção:</p>
@@ -30,10 +33,12 @@ const Configuracoes = () => {
                                     <p className='paragraph-card'>Quantidade de máquinas:</p>
                                     <p className='paragraph-card'>Data da contratatação:</p>
                                 </div>
+                                </div>
                             </Border>
                         </div>
                         <div className='endereco--div'>
                             <Border height={520} width={370}>
+                                <div>
                                 <h1 className='cards-title'>Endereço</h1>
                                 <div className='cards-description'>
                                     <p className="paragraph-card">Logradouro</p>
@@ -48,6 +53,7 @@ const Configuracoes = () => {
                                     <Input width={300} height={30} placeholder={"Status da licença:"}/>
                                 </div>
                                     <button className="border-gradient">Renovar...</button>
+                                </div>
                             </Border>
                         </div>
                     </div>

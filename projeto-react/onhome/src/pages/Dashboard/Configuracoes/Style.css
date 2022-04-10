@@ -5,9 +5,9 @@
 
 .background {
     background-color: rgb(31, 0, 88);
-    width: 100%;
+    width: 1000px;
     height: 850px;
-    
+    /* border: hotpink solid 2px; */
 }
 
 .content  {
@@ -15,6 +15,8 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 1400px;
+    /* border: indigo solid 2px; */
 }
 
 .right--content {
@@ -36,7 +38,6 @@
     height: 90%;
     width: 100%;
     margin-top: 20px;
-    /* border: turquoise solid 2px; */
     display: flex;
 }
 
@@ -53,15 +54,17 @@
     width: 500px;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: rgb(205, 94, 50) solid 2px; */
 }
 
 
 .cards-title{
     color: white;
     font-size: 20px;
-    margin-bottom: 20px;
+    /* border: tomato solid 2px; */
 }
 
 .cards-description{
@@ -70,16 +73,19 @@
     align-items: flex-start;
     justify-content: space-between;
     color: white;
+    /* border: violet solid  2px; */
 }
 
 .paragraph-card{
     padding-top: 10px;
     font-weight: lighter;
+    /* border: skyblue solid 2px; */
 }
 
 .div-input {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 30px;
+    /* border: rgb(241, 4, 210) solid 2px; */
 }
