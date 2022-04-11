@@ -1,6 +1,7 @@
 import React from "react";
-import Input from "/Users/jesteves/projeto-p.i-grupo-10/projeto-react/onhome/src/components/Input/index.jsx";
-function EnderecoEmpresa(formData, setFormData) {
+import Input from "../../../components/Input/index.jsx";
+
+const EnderecoEmpresa = (formData, setFormData) => {
   return (
     <div className="endereco-empresa-container">
       

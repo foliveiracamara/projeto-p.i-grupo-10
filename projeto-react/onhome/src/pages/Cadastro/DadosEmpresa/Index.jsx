@@ -1,7 +1,7 @@
 import React from 'react';
-import Input from "/Users/jesteves/projeto-p.i-grupo-10/projeto-react/onhome/src/components/Input/index.jsx"
+import Input from "../../../components/Input/index.jsx"
 
-function DadosEmpresa(){
+const DadosEmpresa = () => {
     return (
     <div className="dados-empresa-container">
         <label htmlFor="nome_fantasia">Nome Fantasia</label>
