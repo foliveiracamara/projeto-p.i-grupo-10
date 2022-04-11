@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from '../../../components/Input';
 
-function Licenca(formData, setFormData){
+const Licenca = (formData, setFormData) =>{
     return (
         <div className="licenca-container" >
             <select name="options" id="" value={formData.opcoes} className='gradient-select'> 

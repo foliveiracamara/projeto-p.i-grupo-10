@@ -7,7 +7,7 @@ import "./Style.css"
 import GradientText from "../../../components/GradientText/index"
 import Menu from "../Menu/Index"
 
-function Form(props){
+const Form = (props) =>{
     const [page, setPage] = useState(0)
     const [formData, setFormData] = useState({
         nome_fantasia: "",

@@ -3,9 +3,6 @@ import "./Style.css"
 const Menu = (page) => {
 
 const steps =[1, 2, 3]
-
-
-
     return (
         <div >
                 <div className="steps">{steps}</div>
