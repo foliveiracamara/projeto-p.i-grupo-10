@@ -1,0 +1,26 @@
+.footer--container {
+    background-color: #0F0B30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+
+.footer--description {
+    width: 40%;
+    margin: auto;
+}
+
+.footer--links {
+    display: flex;
+    color: #fff;
+}
+
+.footer--link--title {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--option {
+    font-weight: 300;
+}

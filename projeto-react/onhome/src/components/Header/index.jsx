@@ -1,6 +1,4 @@
 import './Style.css'
-import Button from '../Button/Button'
-//import {ArrowRightAltIcon} from '@mui/icons-material';
 
 const Header = () => {
     return (

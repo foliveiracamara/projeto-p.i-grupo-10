@@ -7,13 +7,14 @@ const FeedbackCard = (props) => {
         <div>
             <Border width={"220px"} height={"150px"} >
                 <div className='feedback--clientName'>
-                     <TextWithImage 
+                    <TextWithImage 
                         label={props.label} 
                         title={props.title}
                         fontSizeTitle={props.fontSizeTitle}  
                         fontSizeLabel={props.fontSizeLabel} 
                         subtitle={props.subtitle}
-                        fontSizeSubtitle={props.fontSizeSubtitle}/>
+                        fontSizeSubtitle={props.fontSizeSubtitle}
+                    />
                 </div>
             </Border>
         </div>
