@@ -1,4 +1,3 @@
-import { height } from "@mui/system"
 import "./style.css"
 
 const Border = ({width, height, margin, children}) => {

@@ -1,4 +1,4 @@
-import "./style.css"
+import "./Style.css";
 
 const Button = ({ value, height, width, margin }) => {
     return (
