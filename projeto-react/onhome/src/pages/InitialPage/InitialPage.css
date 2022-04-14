@@ -9,10 +9,10 @@
     height: 100vh;
     width: 100%;
     background-image: 
-            linear-gradient(to right,
+            linear-gradient(45deg,
             rgb(0, 5, 82),  
-            rgb(41, 0, 88), 
-            rgb(77, 0, 107));
+            rgb(30, 0, 82), 
+            rgb(77, 8, 126));
 }
 
 .about--content{
@@ -44,37 +44,12 @@
 }
 
 .solutions {
-    position: relative;
-    height: 30rem;
-    margin-top: 19rem;
-    background-color: #0F0B30;
-    display: flex;
-    align-items: center;
-}
-
-.rightArrow, .leftArrow {
-    position: absolute;
-    top: 8rem;
-    z-index: 999;
+    margin-top: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c3c0c0;
-    opacity: 0;
-    height: 15rem;
-    width: 3rem;
-    cursor: pointer;
-    transition: 0.2s;
+    background-color: rgb(0, 5, 82);
 }
 
-.rightArrow:hover, .leftArrow:hover {
-    opacity: 0.1;
-}
 
-.rightArrow {
-    left: 1360px;
-}
 
-.leftArrow {
-    left: 15px;
-}
