@@ -14,7 +14,6 @@ const Input = ({ width, height, margin, placeholder, borderRadius }) => {
                 }}
                 placeholder={placeholder}
                 />
-        </div>
     )
 }
 

@@ -1,20 +1,16 @@
-import { useState } from "react"
-import "./style.css"
+import "./Style.css"
 
-const Menu = (marginLeft) => {
+const Menu = (page) => {
 
 const steps =[1, 2, 3]
-
-
     return (
-        <div className="vermelho">
-            <div className="steps:active">{steps}</div>
-            
-
+        <div >
+                <div className="steps">{steps}</div>
             <div className="container">
-            <div className='gradient-line' style={{marginLeft: `${marginLeft}%`}}></div>
-            <div className='fine-line'></div>
-      </div>
+                <div className='gradient-line' 
+                style={{marginLeft: page === 0 ? "50px" : page === 1 ? "150px" : "250px"}}></div>
+                <div className='fine-line'></div>
+            </div>
       </div>
 
     )
