@@ -13,7 +13,8 @@ const Input = ({ width, height, margin, placeholder, borderRadius }) => {
                     borderRadius: borderRadius
                 }}
                 placeholder={placeholder}
-                />
+            />
+        </div>
     )
 }
 

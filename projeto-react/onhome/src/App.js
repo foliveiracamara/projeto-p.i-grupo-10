@@ -8,6 +8,7 @@ import Login from './pages/Login/Index';
 function App() {
   return (
     <div className="App">
+      <InitialPage />
     </div>
   );
 }

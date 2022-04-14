@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../components/Button/Button';
+import Button from '../../components/Button';
 import GradientText from '../../components/GradientText';
 import Input from '../../components/Input';
 import "./Style.css"
