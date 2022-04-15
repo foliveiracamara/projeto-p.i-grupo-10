@@ -2,7 +2,7 @@
     padding: 5px 20px;
     border-width: 2px;
     border-style: solid;
-    background: linear-gradient(#000552, #000552) padding-box,
+    background: linear-gradient(var(--background), var(--background)) padding-box,
                 linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%)) border-box;
     border-radius: 42px;
     border-color: transparent;

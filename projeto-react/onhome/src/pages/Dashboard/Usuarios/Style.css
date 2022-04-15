@@ -2,15 +2,6 @@
     padding: 0;
     margin: 0;
 }
-.border-gradient-input {
-    border-width: 2px;
-    border-style: solid;
-    background: linear-gradient(#000552, #000552) padding-box,
-                linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%)) border-box;
-    border-radius: 42px;
-    border-color: transparent;
-    color: white;
-}
 
 .right-content {
     flex: 1;
