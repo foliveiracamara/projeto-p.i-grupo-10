@@ -40,34 +40,36 @@ const Form = (props) => {
 
   return (
     <div className="formulario--background">
-      {/* <Menu/> */}
-      <div className="formulario--mainContainer">
-        <div className="formulario--gradientTitle">
-          <GradientText title={FormTitles[page]} />
-        </div>
-        <div className="formulario--body">{PageDisplay()}</div>
-        <div className="formulario--buttons">
-          <button
-            disabled={page == 0}
-            onClick={() => {
-              setPage((currPage) => currPage - 1);
-            }}
-          >
-            Voltar
-          </button>
-          <button
-            onClick={() => {
-              if (page == FormTitles.length - 1) {
-                console.log(formData);
-              } else {
-                {
-                  setPage((currPage) => currPage + 1);
+      <div className="formulario--gradientBackground">
+        {/* <Menu/> */}
+        <div className="formulario--mainContainer">
+          <div className="formulario--gradientTitle">
+            <GradientText title={FormTitles[page]} />
+          </div>
+          <div className="formulario--body">{PageDisplay()}</div>
+          <div className="formulario--buttons">
+            <button
+              disabled={page == 0}
+              onClick={() => {
+                setPage((currPage) => currPage - 1);
+              }}
+            >
+              Voltar
+            </button>
+            <button
+              onClick={() => {
+                if (page == FormTitles.length - 1) {
+                  console.log(formData);
+                } else {
+                  {
+                    setPage((currPage) => currPage + 1);
+                  }
                 }
-              }
-            }}
-          >
-            {page == FormTitles.length - 1 ? "Finalizar" : "Próximo"}
-          </button>
+              }}
+            >
+              {page == FormTitles.length - 1 ? "Finalizar" : "Próximo"}
+            </button>
+          </div>
         </div>
       </div>
     </div>
