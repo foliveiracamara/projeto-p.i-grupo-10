@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.solutions--cards {
+    text-align: center;
+}
+
 .solutions--header {
     width: 75%;
 }

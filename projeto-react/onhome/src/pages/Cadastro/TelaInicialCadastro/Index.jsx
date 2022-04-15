@@ -1,6 +1,6 @@
 import GradientText from '../../../components/GradientText'
 import ButtonWithArrow from '../../../components/ButtonWithArrow'
-import './Style.css'
+import './style.css'
 
 
 const TelaInicialCadastro = () => {
