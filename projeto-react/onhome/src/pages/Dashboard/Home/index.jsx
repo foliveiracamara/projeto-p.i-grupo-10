@@ -1,4 +1,4 @@
-import Configuracoes from "../Configuracoes/Index";
+import Configuracoes from "../Configuracoes";
 import Menu from "../Components/Menu";
 import Usuarios from "../Usuarios";
 

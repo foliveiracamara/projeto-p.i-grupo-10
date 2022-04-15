@@ -2,7 +2,8 @@ import Border from '../../../components/Border';
 import GradientText from '../../../components/GradientText';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import './Style.css'
+
+import './style.css'
 
 const Usuarios = () => {
     return (

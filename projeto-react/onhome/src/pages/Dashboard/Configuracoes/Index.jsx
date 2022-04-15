@@ -1,9 +1,12 @@
 import Border from '../../../components/Border';
 import GradientText from '../../../components/GradientText';
 import Input from '../../../components/Input';
-import './Style.css';
+
+import './style.css';
 
 const Configuracoes = () => {
+
+
     return (
         <div className='right-content'>
             <div className='title'>
