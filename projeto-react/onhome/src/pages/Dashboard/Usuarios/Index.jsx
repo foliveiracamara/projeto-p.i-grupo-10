@@ -6,6 +6,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import './style.css'
 
 const Usuarios = () => {
+
+    
     return (
         <div className='right-content'>
             <div className='title'>
