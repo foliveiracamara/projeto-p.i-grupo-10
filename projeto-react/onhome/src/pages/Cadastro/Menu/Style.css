@@ -1,11 +1,12 @@
-.fine-line {
+.formulario--menuFineLine {
     background-color: white;
     width: 300px;
     height: 2px;
     border-radius: 10px;
     display: flex;
 }
-.gradient-line {
+
+.formulario--menuGradientLine {
     background: linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%)) border-box;
     width: 70px;
     height: 10px;
@@ -14,7 +15,7 @@
 
 }
 
-.container {
+.formulario--menuContainer {
     width: 36vw;
     height: 8vh;
     display: flex;
@@ -23,8 +24,7 @@
     position: absolute;
 }
 
-
-.steps {
+.formulario--menuSteps{
     color: white;
     opacity: 40%;
     justify-content: space-between;
