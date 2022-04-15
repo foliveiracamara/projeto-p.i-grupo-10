@@ -1,6 +1,6 @@
-import GradientText from '../../../components/GradientText'
-import FeedbackCard from '../Components/FeedbackCard/FeedbackCard'
-import './Style.css'
+import GradientText from '../../../../components/GradientText'
+import FeedbackCard from './FeedbackCard'
+import './style.css'
 
 const Feedbacks = () => {
     return (

@@ -14,7 +14,7 @@ const Border = ({width, height, margin, children}) => {
                 }}>
                 {/* {text}
                 {validate} */}
-                <p>{children}</p>
+                <div>{children}</div>
             </div>
         </div>
     )
