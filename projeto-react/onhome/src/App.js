@@ -1,4 +1,5 @@
 import './App.css';
+import TelaInicialCadastro from './pages/Cadastro/TelaInicialCadastro/Index';
 import Configuracoes from './pages/Dashboard/Configuracoes/Index';
 import Home from './pages/Dashboard/Home/';
 import InitialPage from './pages/InitialPage/index';
