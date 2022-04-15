@@ -11,14 +11,14 @@ const TelaInicialCadastro = () => {
                 <div className='div--text'>
                     <GradientText 
                         title={"Olá! este é o seu primeiro acesso"}
-                        fontSizeTitle={30}/>
+                        fontSizeTitle={30} />
                     <GradientText 
                         title={"Por favor, nos informe alguns dados para acessar nossa plataforma"}
                         fontSizeTitle={30}
                     />
                 </div>
                 <div>
-                    <ButtonWithArrow color={"white"}>Seguir</ButtonWithArrow> 
+                    <ButtonWithArrow color={"white"} >Seguir</ButtonWithArrow> 
                 </div>
             </div>
         </div>

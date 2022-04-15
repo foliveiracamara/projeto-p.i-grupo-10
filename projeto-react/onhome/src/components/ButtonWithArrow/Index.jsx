@@ -8,7 +8,7 @@ const ButtonWithArrow = ({ value, style }) => {
     return (
         <button 
             className="button-with-arrow" 
-            style={style}>
+            style={style} >
             {value}
             <ArrowRightAltIcon 
                 sx={{ fontSize: '48px', color: '#7879F1' }}

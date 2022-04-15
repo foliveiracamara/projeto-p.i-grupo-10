@@ -13,10 +13,10 @@ const Licenca = (formData, setFormData) =>{
             <select name="types" id="" value={formData.tipos} className='formulario--gradientSelect'>
                 <option value="1">Anual</option>
                 <option value="2">Semestral</option>
-                <option value="3">Mensal</option>
+                <option value="3">Mensal</option >
             </select>
 
-            <label className="formulario--label" htmlFor="qtdMaquinas">Quantidade de máquinas</label>
+            <label className="formulario--label" htmlFor="qtdMaquinas">Quantidade de máquinas</label >
             <Input />
         </div>
     )
