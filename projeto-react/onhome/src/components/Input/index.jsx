@@ -1,13 +1,19 @@
 import "./style.css"
 
-const Input = ({width, height, children, placeholder, display}) => {
+const Input = ({ width, height, margin, placeholder, borderRadius }) => {
 
     return (
         <div>
-            <input type="text" className="border-gradient-input" placeholder={placeholder} style={{ 
-                width: width,  
-                height: height,
-                display: display}}/>
+            <input type="text" 
+                className="border-gradient-input" 
+                style={{ 
+                    width: width,  
+                    height: height,
+                    margin: margin,
+                    borderRadius: borderRadius        
+                }}
+                placeholder={placeholder}
+            />
         </div>
     )
 }

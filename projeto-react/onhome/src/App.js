@@ -1,15 +1,17 @@
-
 import './App.css';
 import TelaInicialCadastro from './pages/Cadastro/TelaInicialCadastro/Index';
 import Configuracoes from './pages/Dashboard/Configuracoes/Index';
+import Home from './pages/Dashboard/Home/';
+import InitialPage from './pages/InitialPage/index';
+import Login from './pages/Login/index';
 import Usuarios from './pages/Dashboard/Usuarios/Index';
-import InitialPage from './pages/InitialPage/InitialPage';
-import Login from './pages/Login/Index';
+import Form from './pages/Cadastro/Form/index'
 
 function App() {
   return (
     <div className="App">
-        <TelaInicialCadastro />
+      {/* <Home /> */}
+      <InitialPage />
     </div>
   );
 }

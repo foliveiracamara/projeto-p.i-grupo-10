@@ -1,24 +1,20 @@
-import React from 'react';
-import Button from '../../components/Button/Button';
-import GradientText from '../../components/GradientText';
-import Input from '../../components/Input';
-import "./Style.css"
+import React from "react";
+import Button from "../../components/Button";
+import GradientText from "../../components/GradientText";
+import Input from "../../components/Input";
+import "./style.css";
 
 const Login = () => {
-    return (
-        <div className='form-background'>
+  return (
+    <div className="formulario--loginBackground">
+      <GradientText title={"Seja bem-vindo(a)!"} />
+      <label className="formulario--loginLabel" htmlFor="">E-mail</label>
+      <Input height={"25px"} width={"537px"} />
+      <label className="formulario--loginLabel" htmlFor="">Senha</label>
+      <Input height={"25px"} width={"537px"} />
+      <Button>Entrar</Button>
+    </div>
+  );
+};
 
-            <GradientText title={"Seja bem-vindo(a)!"} />
-            <label htmlFor="">E-mail</label>
-            <Input height={"25px"} width={"537px"}/>
-            <label htmlFor="">Senha</label>
-            <Input height={"25px"} width={"537px"}/>
-            <Button >Entrar</Button>
-
-        </div>
-
-    )
-
-}
-
-export default Login
+export default Login;

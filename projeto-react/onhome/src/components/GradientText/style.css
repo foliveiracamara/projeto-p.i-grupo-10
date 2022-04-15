@@ -10,6 +10,7 @@
 .text .label {
     font-size: 1.25em;
 }
+
 .text .title {
     font-size: 2em;
     background: linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%));

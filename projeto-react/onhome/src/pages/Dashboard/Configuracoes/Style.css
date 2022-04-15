@@ -2,90 +2,66 @@
     padding: 0;
     margin: 0;
 }
-
-.background {
-    background-color: rgb(31, 0, 88);
-    width: 1000px;
-    height: 850px;
-    /* border: hotpink solid 2px; */
-}
-
-.content  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 1400px;
-    /* border: indigo solid 2px; */
-}
-
-.right--content {
-    margin-left: 300px;
-    height: 700px;
-    width: 1000px;
-    /* border: rgb(255, 157, 0) solid 2px; */
-    padding-top: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .title{
     display: flex;
 }
 
 .cards {
-    height: 90%;
     width: 100%;
-    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
-.empresa-plano--div {
-    width: 500px;
-    height: 100%;
+.cards > * {
+    flex: 1;
+    flex-grow: 1;
+}
+.empresa-plano {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* border: yellow solid 2px; */
+    gap: 20px;
 }
-
-.endereco--div{
-    width: 500px;
-    height: 100%;
+.endereco {
+    display: flex;
+}
+.endereco .border-gradient {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: rgb(205, 94, 50) solid 2px; */
+    justify-content: space-between;
 }
-
-
 .cards-title{
     color: white;
     font-size: 20px;
-    /* border: tomato solid 2px; */
 }
 
-.cards-description{
+.cards-content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     color: white;
-    /* border: violet solid  2px; */
 }
 
 .paragraph-card{
     padding-top: 10px;
     font-weight: lighter;
-    /* border: skyblue solid 2px; */
 }
 
 .div-input {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     margin-top: 30px;
-    /* border: rgb(241, 4, 210) solid 2px; */
+}
+
+.endereco .button-right {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+.endereco .button-right button {
+    padding: 0 20px;
+    width: fit-content;
 }
