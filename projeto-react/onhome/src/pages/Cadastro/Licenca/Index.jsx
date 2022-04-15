@@ -9,7 +9,7 @@ const Licenca = (formData, setFormData) =>{
                 <option value="2">Opção 2</option>
                 <option value="3">Opção 3</option>
             </select>
-
+            {/* // pfv vai agr */}
             <select name="types" id="" value={formData.tipos} className='formulario--gradientSelect'>
                 <option value="1">Anual</option>
                 <option value="2">Semestral</option>

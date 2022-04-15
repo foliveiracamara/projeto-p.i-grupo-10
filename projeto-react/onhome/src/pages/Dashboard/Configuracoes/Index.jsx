@@ -6,7 +6,7 @@ import './style.css';
 
 const Configuracoes = () => {
 
-
+// pfv vai agr
     return (
         <div className='right-content'>
             <div className='title'>
