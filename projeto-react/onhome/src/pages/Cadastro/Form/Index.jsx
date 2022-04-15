@@ -30,7 +30,7 @@ const Form = (props) => {
 
   const PageDisplay = () => {
     if (page === 0) {
-      return <DadosEmpresa formData={formData} setFormData={formData} />;
+      return <DadosEmpresa formData={formData} setFormData={formData}  />;
     } else if (page === 1) {
       return <EnderecoEmpresa formData={formData} setFormData={formData} />;
     } else {

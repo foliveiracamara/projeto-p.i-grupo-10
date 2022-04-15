@@ -21,7 +21,7 @@ const EnderecoEmpresa = (formData, setFormData) => {
         Número
       </label>
       <Input width={"243px"} height={"25px"} />
-      <label className="formulario--label" htmlFor="cep">
+      <label className="formulario--label" htmlFor="cep" >
         CEP
       </label>
       <Input width={"243px"} height={"25px"} />

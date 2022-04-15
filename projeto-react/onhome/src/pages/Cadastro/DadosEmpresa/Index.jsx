@@ -3,7 +3,7 @@ import Input from "../../../components/Input/index.jsx";
 
 const DadosEmpresa = () => {
   return (
-    <div className="dadosEmpresa--mainContainer">
+    <div className="dadosEmpresa--mainContainer" >
       <label className="formulario--label" htmlFor="nome_fantasia">
         Nome Fantasia
       </label>
