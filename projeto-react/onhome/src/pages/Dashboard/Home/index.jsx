@@ -1,6 +1,6 @@
 import Configuracoes from "../Configuracoes/Index";
 import Menu from "../Components/Menu";
-import Usuarios from "../Usuarios/Index";
+import Usuarios from "../Usuarios";
 
 const Home = () => {
     return (

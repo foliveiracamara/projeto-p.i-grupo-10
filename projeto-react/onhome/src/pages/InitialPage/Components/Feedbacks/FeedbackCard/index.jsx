@@ -1,5 +1,5 @@
 import Border from '../../../../../components/Border'
-import TextWithImage from '../../../../../components/Produtos/TextWithImage';
+import TextWithImage from '../../Produtos/TextWithImage'
 import './style.css'
 
 const FeedbackCard = (props) => {

@@ -1,4 +1,4 @@
-import GradientText from "../../GradientText";
+import GradientText from "../../../../../components/GradientText";
 
 import './style.css';
 

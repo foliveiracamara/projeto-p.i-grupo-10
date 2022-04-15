@@ -1,5 +1,5 @@
 import GradientText from '../../../components/GradientText'
-import ButtonWithArrow from '../../../components/ButtonWithArrow/Index'
+import ButtonWithArrow from '../../../components/ButtonWithArrow'
 import './Style.css'
 
 

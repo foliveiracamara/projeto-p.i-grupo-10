@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import Produtos from "../../components/Produtos";
+import Produtos from "./Components/Produtos";
 import Feedbacks from "./Components/Feedbacks"
 import Solutions from "./Components/Solutions";
 import ContactUs from "./Components/ContactUs";
