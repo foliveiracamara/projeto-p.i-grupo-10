@@ -1,11 +1,11 @@
 import Header from "../../components/Header";
 import Produtos from "../../components/Produtos";
-import Feedbacks from "./Feedbacks/Index"
+import Feedbacks from "./Components/Feedbacks"
 import Solutions from "./Components/Solutions";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 
-import './InitialPage.css'
+import './style.css'
 
 const InitialPage = () => {
 
@@ -25,7 +25,7 @@ const InitialPage = () => {
                 </section>
                     <Produtos />
                 <section>
-                    <Feedbacks title="aaaaaa"/>
+                    <Feedbacks />
                 </section>
                 <section>
                     <ContactUs />
