@@ -5,6 +5,7 @@
 }
 .text.main-title {
     max-width: 450px;
+    text-align: center;
 }
 
 .text .label {

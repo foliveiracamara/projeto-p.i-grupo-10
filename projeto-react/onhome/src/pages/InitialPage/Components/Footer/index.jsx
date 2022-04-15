@@ -1,4 +1,5 @@
 import Button from "../../../../components/Button"
+import ButtonWithArrow from "../../../../components/ButtonWithArrow"
 import GradientText from "../../../../components/GradientText"
 
 import "./style.css"
@@ -34,7 +35,7 @@ const Footer = () => {
                     fontSizeTitle={40}
                     fontWeight={"bold"} 
                 />
-                <Button value={"Seguir"} margin={"20px 0"} />
+                <ButtonWithArrow value={"Seguir"} style={{ margin: "20px 0"}} />
                 <div className="footer--icons">
                     {mediaIcons.map(image => (
                         <img src={image} alt="" />
