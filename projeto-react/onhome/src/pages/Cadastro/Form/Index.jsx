@@ -5,7 +5,7 @@ import EnderecoEmpresa from "../EnderecoEmpresa/index";
 import Licenca from "../Licenca/index";
 import DadosEmpresa from "../DadosEmpresa/index";
 import GradientText from "../../../components/GradientText/index";
-import Menu from "../Menu/index";
+import MenuCadastro from "../MenuCadastro/index";
 
 const Form = (props) => {
   const [page, setPage] = useState(0);

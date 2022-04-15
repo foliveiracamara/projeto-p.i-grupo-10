@@ -1,6 +1,6 @@
 import "./style.css"
 
-const Menu = (page) => {
+const MenuCadastro = (page) => {
 
 const steps =[1, 2, 3]
     return (
@@ -18,4 +18,4 @@ const steps =[1, 2, 3]
 }
 
 
-export default Menu
+export default MenuCadastro
