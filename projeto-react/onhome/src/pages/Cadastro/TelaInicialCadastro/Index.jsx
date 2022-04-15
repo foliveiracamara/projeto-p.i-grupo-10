@@ -1,24 +1,23 @@
 import GradientText from '../../../components/GradientText'
-import Button from '../../../components/Button/Button'
-import './Style.css'
 import ButtonWithArrow from '../../../components/ButtonWithArrow/Index'
+import './Style.css'
 
 
 const TelaInicialCadastro = () => {
     return (
-        <div className='mainDiv--Background'>
-            <div className='content'>
+        <div className='mainDiv--background'>
+            <div className='mainDiv--content'>
                 <div className='div--text'>
                     <GradientText 
                         title={"Olá! este é o seu primeiro acesso"}
-                        fontSizeTitle={35}/>
+                        fontSizeTitle={30}/>
                     <GradientText 
                         title={"Por favor, nos informe alguns dados para acessar nossa plataforma"}
-                        fontSizeTitle={35}
+                        fontSizeTitle={30}
                     />
                 </div>
-                <div className='div--button'>
-                    <ButtonWithArrow color={"white"}>Seguir</ButtonWithArrow>
+                <div>
+                    <ButtonWithArrow color={"white"}>Seguir</ButtonWithArrow> 
                 </div>
             </div>
         </div>
