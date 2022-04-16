@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../../../components/Input/index.jsx";
+import Input from "../../../components/Input";
 // pfv vai agr
 const DadosEmpresa = () => {
   return (

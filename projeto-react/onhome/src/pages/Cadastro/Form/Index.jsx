@@ -1,11 +1,11 @@
 import { useState } from "react";
 import React from "react";
 import "./style.css";
-import EnderecoEmpresa from "../EnderecoEmpresa/index";
-import Licenca from "../Licenca/index";
-import DadosEmpresa from "../DadosEmpresa/index";
-import GradientText from "../../../components/GradientText/index";
-import MenuCadastro from "../MenuCadastro/index";
+import EnderecoEmpresa from "../EnderecoEmpresa";
+import Licenca from "../Licenca";
+import DadosEmpresa from "../DadosEmpresa";
+import GradientText from "../../../components/GradientText";
+import MenuCadastro from "../MenuCadastro";
 // pfv vai agr
 const Form = (props) => {
   const [page, setPage] = useState(0);
