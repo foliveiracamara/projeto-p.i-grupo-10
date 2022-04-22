@@ -52,7 +52,8 @@ semestral CHAR(1),
 anual CHAR(1));
 
 CREATE TABLE IF NOT EXISTS Computadores (
-idComputador INT PRIMARY KEY AUTO_INCREMENT,
+idComputador VARCHAR(30) PRIMARY KEY,
+hostName VARCHAR(30),
 sistemaOperacional VARCHAR(20),
 modeloProcessador VARCHAR(50),
 idProcessador VARCHAR(30),

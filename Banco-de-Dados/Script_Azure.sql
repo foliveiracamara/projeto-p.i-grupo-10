@@ -48,7 +48,8 @@ semestral CHAR(1),
 anual CHAR(1));
 
 CREATE TABLE Computadores (
-idComputador INT PRIMARY KEY IDENTITY,
+idComputador VARCHAR(30) PRIMARY KEY,
+hostName VARCHAR(30),
 sistemaOperacional VARCHAR(20),
 modeloProcessador VARCHAR(50),
 idProcessador VARCHAR(30),
