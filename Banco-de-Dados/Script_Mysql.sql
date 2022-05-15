@@ -32,13 +32,18 @@ telefoneEmpresa VARCHAR(11),
 emailEmpresa VARCHAR(45),
 fkEmpresa INT);
 
+CREATE TABLE IF NOT EXISTS Especialidade (
+idEspecialidade INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(50));
+
 CREATE TABLE IF NOT EXISTS Usuario (
 idUsuario INT PRIMARY KEY AUTO_INCREMENT,
 nomeUsuario VARCHAR(50),
 emailUser VARCHAR(50),
 senhaUser VARCHAR(50),
 fkEmpresa INT,
-fkPermissao INT);
+fkPermissao INT,
+fkEspecialidade INT);
 
 CREATE TABLE IF NOT EXISTS Permissao (
 idPermissao INT PRIMARY KEY AUTO_INCREMENT,
@@ -83,3 +88,7 @@ dataCaptura VARCHAR(19),
 fkComputador INT);
 
 INSERT INTO Usuario(nomeUsuario, emailUser, senhaUser) VALUES ('admimOnHome', 'admin@onhome.com', 'admin@admin');
+
+select*from Monitoramento;
+select*from Processo;
+select*from Computadores;
