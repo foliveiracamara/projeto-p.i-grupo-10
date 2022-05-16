@@ -14,7 +14,9 @@ const TextWithImage = (props) => {
                 className={props.className}
                 classNameTitle={props.classNameTitle}
                 classNameSubtitle={props.classNameSubtitle}
-                align="left"/>
+                align="left"
+                width={"50%"}
+            />
             <img src={props.image} alt={props.alt} />
         </div>
     );

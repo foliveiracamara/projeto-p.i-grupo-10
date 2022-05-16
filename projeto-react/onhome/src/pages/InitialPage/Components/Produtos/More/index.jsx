@@ -1,7 +1,8 @@
 import GradientText from "../../../../../components/GradientText";
-import './style.css';
 import Border from "../../../../../components/Border";
 import Button from "../../../../../components/Button";
+
+import './style.css';
 
 const More = () => {
     return (

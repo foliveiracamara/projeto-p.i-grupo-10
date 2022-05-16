@@ -1,6 +1,6 @@
 import "./style.css"
 
-const Border = ({width, height, margin, children}) => {
+const Border = ({ width, height, margin, children, padding }) => {
 
     return (
         <div>
