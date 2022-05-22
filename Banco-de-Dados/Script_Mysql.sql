@@ -62,7 +62,8 @@ CREATE TABLE IF NOT EXISTS Periodo (
 );
 
 CREATE TABLE IF NOT EXISTS Computadores (
-	idComputador VARCHAR(30) PRIMARY KEY,
+	idComputador INT PRIMARY KEY AUTO_INCREMENT,
+    ipComputador VARCHAR(30),
 	hostName VARCHAR(30),
 	sistemaOperacional VARCHAR(20),
 	modeloProcessador VARCHAR(50),
@@ -96,8 +97,9 @@ CREATE TABLE IF NOT EXISTS Processo (
 );
 
 CREATE TABLE IF NOT EXISTS Gamificacao (
-	fkUsuario INT PRIMARY KEY,
-	qtdPontos INT
+	idGamificacao INT PRIMARY KEY AUTO_INCREMENT,
+	qtdPontos INT,
+	fkUsuario INT
 );
 
 

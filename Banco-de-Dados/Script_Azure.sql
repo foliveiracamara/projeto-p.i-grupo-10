@@ -48,7 +48,8 @@ semestral CHAR(1),
 anual CHAR(1));
 
 CREATE TABLE Computadores (
-idComputador VARCHAR(30) PRIMARY KEY,
+idComputador INT PRIMARY KEY IDENTITY,
+ipComputador VARCHAR(30),
 hostName VARCHAR(30),
 sistemaOperacional VARCHAR(20),
 modeloProcessador VARCHAR(50),
@@ -77,5 +78,11 @@ usoMemoria FLOAT,
 usoGpu FLOAT,
 dataCaptura VARCHAR(19),
 fkComputador INT);
+
+CREATE TABLE IF NOT EXISTS Gamificacao (
+	idGamificacao INT PRIMARY KEY IDENTITY,
+	qtdPontos INT,
+	fkUsuario INT
+);
 
 INSERT INTO Usuario(nomeUsuario, emailUser, senhaUser) VALUES ('admimOnHome', 'admin@onhome.com', 'admin@admin');
