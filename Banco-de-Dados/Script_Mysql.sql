@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS Usuario (
 	nomeUsuario VARCHAR(50),
 	emailUser VARCHAR(50),
 	senhaUser VARCHAR(50),
+    webhook VARCHAR(150),
 	fkEmpresa INT,
 	fkPermissao INT,
 	fkEspecialidade INT
@@ -102,8 +103,31 @@ CREATE TABLE IF NOT EXISTS Gamificacao (
 	fkUsuario INT
 );
 
+CREATE TABLE IF NOT EXISTS Ides (
+	idIdes INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50)
+);
 
 INSERT INTO Usuario(nomeUsuario, emailUser, senhaUser) VALUES ('admimOnHome', 'admin@onhome.com', 'admin@admin');
+
+INSERT INTO Ides(nome) VALUES 
+('eclipse'),
+('Code'),
+('pycharm'),
+('netbeans64'),
+('phpstorm'),
+('webstorm'),
+('atomo'),
+('jira'),
+('sonarqube'),
+('docker'),
+('kubernetes'),
+('postgres'),
+('mysqld'),
+('java'),
+('powershell'),
+('cmd'),
+('jenkins');
 
 select*from Monitoramento;
 select*from Processo;
