@@ -108,6 +108,11 @@ CREATE TABLE IF NOT EXISTS Ides (
     nome VARCHAR(50)
 );
 
+CREATE TABLE IF NOT EXISTS Frases (
+idFrase INT PRIMARY KEY AUTO_INCREMENT,
+frase TEXT,
+autor VARCHAR(70));
+
 INSERT INTO Usuario(nomeUsuario, emailUser, senhaUser) VALUES ('admimOnHome', 'admin@onhome.com', 'admin@admin');
 
 INSERT INTO Ides(nome) VALUES 
@@ -128,6 +133,18 @@ INSERT INTO Ides(nome) VALUES
 ('powershell'),
 ('cmd'),
 ('jenkins');
+
+INSERT INTO Frases VALUES 
+(null, 'Não é a linguagem de programação que define o programador, mas sim sua lógica.', 'David Ribeiro Guilherme'),
+(null, 'Eu sou programador. \nEu não tenho vida.', 'Anônimo'),
+(null, 'Programadores são ferramentas para converter cafeína em código.', 'Anônimo'),
+(null, 'Ser desenvolvedor é uma viagem onde a próxima parada é a solução de um problema.', 'Thales Valentim'),
+(null, 'Se até as variáveis precisam ser declaradas porque não me declarar pra você?', 'Hebert Barros'),
+(null, 'A questão não é saber os códigos ou linhas de comando, é saber o que fazer com eles.', 'Sérgio Arena'),
+(null, 'Faça da sua vida mais "Responsivo"', 'Luana Monteiro'),
+(null, 'Linguagens não morrem mas sim seus programadores.', 'Thales de Oliveira Gomes'),
+(null, 'Sou só um vírus, querendo escapar, dos programadores da vida.', 'Wesley D Amico'),
+(null, 'Programadores e artistas são os únicos profissionais que tem como hobby a própria profissão.', 'Rafael Lain');
 
 select*from Monitoramento;
 select*from Processo;
